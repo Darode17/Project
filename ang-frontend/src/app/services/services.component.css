@@ -1,0 +1,48 @@
+.services-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.services-section h2 {
+    color: #b30000;
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.service-item {
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.service-item img,
+.service-item p {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.service-item:hover img {
+    transform: scale(1.2);
+}
+
+.service-item:hover p {
+    color: #b30000;
+    transform: scale(1.05);
+}
+
+.service-item img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 14px;
+    color: #333;
+}
