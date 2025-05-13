@@ -1,0 +1,30 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.carousel-image {
+    width: 70%;
+    max-height: 10%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0 20px;
+}
+
+.nav-button:hover {
+    color: #000;
+}

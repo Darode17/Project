@@ -1,0 +1,43 @@
+.announcement-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.announcement-card {
+    flex: 1 1 350px;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: #fdfdfd;
+    border: 1px solid #ccc;
+    border-left: 5px solid crimson;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-card h2 {
+    margin-top: 0;
+    color: #b30000;
+}
+
+.announcement-card button {
+    background-color: crimson;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.announcement-card button:hover {
+    background-color: darkred;
+}
+
+a {
+    color: crimson;
+    text-decoration: underline;
+}
