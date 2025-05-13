@@ -1,23 +1,22 @@
 .title {
     text-align: center;
     color: #990000;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 200%;
+    margin-bottom: 2%;
 }
 
 .selector {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2%;
 }
 
 .buttons button {
-    padding: 0.5rem 1rem;
-    margin: 0.25rem;
-    border: 1px solid #900;
-    border-radius: 8px;
+    padding: 1% 2%;
+    margin: 0.5%;
+    border: 0.1em solid #900;
+    border-radius: 5%;
     background: #fff;
     cursor: pointer;
-
 }
 
 .buttons .selected {
@@ -27,18 +26,18 @@
 
 .info-card {
     display: flex;
-    gap: 1rem;
+    gap: 2%;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 1rem;
+    margin-top: 2%;
     flex-wrap: wrap;
 }
 
 .box {
-    padding: 1rem;
-    border-radius: 10px;
-    width: 300px;
-    min-height: 120px;
+    padding: 2%;
+    border-radius: 5%;
+    width: 30%;
+    min-height: 20%;
 }
 
 .receive {
@@ -53,7 +52,7 @@
 
 .image {
     text-align: center;
-    max-width: 300px;
+    max-width: 30%;
 }
 
 .image img {
