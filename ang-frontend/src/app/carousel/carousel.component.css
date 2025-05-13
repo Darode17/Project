@@ -1,18 +1,48 @@
-.carousel-container {
+/* .carousel-container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    max-width: 100%;
-    margin: auto;
+    width: 100vw;
+    margin: 0;
+    padding-top: 34px;
+    overflow: hidden;
 }
 
 .carousel-image {
-    width: 70%;
-    max-height: 10%;
-    object-fit: cover;
-    border-radius: 10px;
+    width: 100vw;
+    
+    height: 500px;
+    object-fit: none;
+    border-radius: 0;
     transition-duration: 1s;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 100%;
+} */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-container {
+    width: 100vw;
+    max-width: 100%;
+    overflow: hidden;
+    padding-top: 34px;
+    margin: 0 auto;
+    /* margin-top: 30px; */
+}
+
+.carousel-image {
+    width: 100vw;
+    height: 500px;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-button {

@@ -8,9 +8,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 })
 export class ImageCarouselComponent implements OnInit, OnDestroy {
   images: string[] = [
-    '\worlddonarday.jpg',
-    '\give-blood-2.png',
-    '\give-blood-2.png'
+    '\img25.jpeg',
+    '\img26.jpeg',
   ];
   currentIndex = 0;
   intervalId: any;
