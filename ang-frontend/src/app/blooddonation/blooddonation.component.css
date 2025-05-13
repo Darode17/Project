@@ -1,0 +1,61 @@
+.title {
+    text-align: center;
+    color: #990000;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.selector {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.buttons button {
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    border: 1px solid #900;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+
+}
+
+.buttons .selected {
+    background-color: #c62828;
+    color: #fff;
+}
+
+.info-card {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.box {
+    padding: 1rem;
+    border-radius: 10px;
+    width: 300px;
+    min-height: 120px;
+}
+
+.receive {
+    background-color: #ffdfb5;
+    color: #5c4033;
+}
+
+.donate {
+    background-color: #a5d1ff;
+    color: #003366;
+}
+
+.image {
+    text-align: center;
+    max-width: 300px;
+}
+
+.image img {
+    max-width: 100%;
+}

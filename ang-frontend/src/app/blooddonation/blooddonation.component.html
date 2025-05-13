@@ -1,0 +1,29 @@
+<h2 class="title">Learn About Donation</h2>
+
+<div class="selector">
+    <span>Select your Blood Type</span>
+    <div class="buttons">
+        <button *ngFor="let type of bloodTypes" [ngClass]="{ selected: selectedType === type }"
+            (click)="selectType(type)">
+            {{ type }}
+        </button>
+    </div>
+</div>
+
+<div class="info-card">
+    <div class="box receive">
+        <h3>You can take from</h3>
+        <p>{{ getReceivers().join(' ') }}</p>
+    </div>
+
+    <div class="box donate">
+        <h3>You can give to</h3>
+        <p>{{ getDonors().join(' ') }}</p>
+    </div>
+
+    <div class="image">
+        <img src="image.png" alt="Blood donation illustration" />
+        <p>One Blood Donation can save upto <strong>Three Lives</strong></p>
+    
+    </div>
+</div>
