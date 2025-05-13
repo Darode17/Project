@@ -1,9 +1,10 @@
 .services-section {
     text-align: center;
     padding: 40px 20px;
+    margin: auto;
 }
 
-.services-section h2 {
+.services-section h1 {
     color: #b30000;
     margin-bottom: 30px;
 }
