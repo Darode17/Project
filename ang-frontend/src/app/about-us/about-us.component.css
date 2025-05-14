@@ -1,0 +1,40 @@
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fce6e6;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+    width: 100%;
+
+}
+
+.text-content h2 {
+    color: #c62828;
+}
+
+.text-content p {
+    color: #333;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #e57373;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-content img {
+    width: 50%;
+    border-radius: 10px;
+
+}

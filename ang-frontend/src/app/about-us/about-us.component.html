@@ -1,0 +1,19 @@
+<div class="about-section">
+    <div class="text-content">
+        <h2>About PUSLEPOINT</h2>
+        <p>
+            e-Raktkosh is a platform to provide information about blood banks, blood availability, blood donation camps
+            and assistant automation.
+            More than 3800 blood banks are registered on e-Raktkosh from 29 states and 8 UTs.
+        </p>
+        <p *ngif="showMore">
+            e-Raktkosh is a citizen centric portal and mobile app for various services such as nearest blood bank, blood
+            availability & blood donation camps information.
+            It enforces blood banks to strictly follow national blood policy standards and guidelines.
+        </p>
+        <button (click)="toggleReadMore()">{{ showMore ? 'Read Less' : 'Read More' }}</button>
+    </div>
+    <div class="image-content">
+        <img src="\istockphoto-637422184-612x612.jpg" alt="Blood cells" />
+    </div>
+</div>
