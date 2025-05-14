@@ -6,11 +6,12 @@ import { BlooddonationComponent } from './blooddonation/blooddonation.component'
 import { EventandcollaborationComponent } from './eventandcollaboration/eventandcollaboration.component';
 import { ImageCarouselComponent } from './carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
+import { DonationProcessComponent } from './donation-process/donation-process.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent, RouterOutlet, ServicesComponent, BlooddonationComponent, EventandcollaborationComponent, ImageCarouselComponent,FooterComponent],
+  imports: [NavbarComponent, RouterOutlet, ServicesComponent, BlooddonationComponent, EventandcollaborationComponent, ImageCarouselComponent,FooterComponent, DonationProcessComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

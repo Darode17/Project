@@ -1,0 +1,48 @@
+.donation-process-container {
+    background: #ffd6d6;
+    text-align: center;
+    padding: 2rem;
+}
+
+.donation-process-container h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.donation-process-container .highlight {
+    color: #d63b3b;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.step {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.step img {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+.step h3 {
+    color: #c42525;
+    margin-bottom: 0.5rem;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: white;
+    margin: 0 1rem;
+}
