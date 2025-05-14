@@ -48,6 +48,50 @@ body {
     text-decoration: underline;
 }
 
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Dropdown content - hidden by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Dropdown item links */
+.dropdown-content a {
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Highlight on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .page-wrapper {
     display: flex;
     flex-direction: column;
