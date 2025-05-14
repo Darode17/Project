@@ -1,0 +1,8 @@
+.footer a:hover {
+    text-decoration: underline;
+    color: #f8d7da;
+}
+
+.footer i {
+    margin-right: 8px;
+}
