@@ -80,6 +80,8 @@ select:focus {
     font-weight: bold;
 } */
 /* Global Reset */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -87,24 +89,43 @@ select:focus {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body {
+    background-image: url('/assets/blood-donation-background.jpg');
+    /* Updated path */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
 /* Container Styling */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem 1rem;
-    min-height: 100vh;
-    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    max-width: 90%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
 }
 
 /* Form Styling */
 form.login-container {
-    background: white;
+    background: transparent;
     padding: 2rem;
     border-radius: 1rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    max-width: 500px;
     width: 100%;
+    max-width: 500px;
 }
 
 .input-group {
@@ -116,71 +137,84 @@ form.login-container {
 .input-group label {
     margin-bottom: 0.5rem;
     font-weight: 600;
-    color: #333;
+    color: #495057;
 }
 
 .input-group input,
 .input-group select {
     padding: 0.75rem;
-    border: 1px solid #ccc;
+    border: 1px solid #ced4da;
     border-radius: 0.5rem;
     font-size: 1rem;
     transition: border-color 0.3s;
+    background-color: #ffffff;
 }
 
 .input-group input:focus,
 .input-group select:focus {
-    border-color: #ff5e62;
+    border-color: #ff6b6b;
     outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
 }
 
 .errors .text-danger {
     font-size: 0.875rem;
-    color: red;
+    color: #dc3545;
     margin-top: 0.25rem;
 }
 
 /* Button Styling */
 button.btn {
     padding: 0.75rem 1.2rem;
-    background-color: #ff5e62;
+    background-color: #dc3545;
     color: white;
     border: none;
     border-radius: 2rem;
     cursor: pointer;
     width: 100%;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 button.btn:hover {
-    background-color: #e74c3c;
+    background-color: #c82333;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.25);
 }
 
 button[disabled] {
-    background-color: #ccc;
+    background-color: #e0e0e0;
     cursor: not-allowed;
+    opacity: 0.7;
+    box-shadow: none;
 }
 
 /* Footer Text */
 .footer-text {
     margin-top: 1rem;
     font-size: 0.95rem;
+    color: #555;
 }
 
 .footer-text a {
-    color: #ff5e62;
+    color: #ff6b6b;
     font-weight: 600;
     text-decoration: none;
 }
 
 .footer-text a:hover {
     text-decoration: underline;
+    color: #ff4757;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 600px) {
-    form.login-container {
+    .container {
+        padding: 1.5rem;
+    }
+
+    form.login-container {  
         padding: 1.5rem;
     }
 

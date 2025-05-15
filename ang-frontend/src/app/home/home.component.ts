@@ -10,10 +10,12 @@ import { BloodEligibilityComponent } from '../blood-eligibility/blood-eligibilit
 import { MarqueComponent } from '../marque/marque.component';
 import { ServicesComponent } from '../services/services.component';
 import { AboutUsComponent } from '../about-us/about-us.component';
+import { ReceiverSignupComponent } from '../receiver-signup/reciver-signup.component';
+import { ReceiverLoginComponent } from '../receiver-login/receiver-login.component';
 
 @Component({
   selector: 'app-home',
-  imports: [BlooddonationComponent,AboutUsComponent, EventandcollaborationComponent, DonationProcessComponent, ImageCarouselComponent, FooterComponent, DonorSignupComponent, DonarLoginComponent, BloodEligibilityComponent, MarqueComponent,ServicesComponent],
+  imports: [BlooddonationComponent, AboutUsComponent, EventandcollaborationComponent, DonationProcessComponent, ImageCarouselComponent, FooterComponent, DonorSignupComponent, DonarLoginComponent, BloodEligibilityComponent, MarqueComponent, ServicesComponent, ReceiverLoginComponent, ReceiverSignupComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

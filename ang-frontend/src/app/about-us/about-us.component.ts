@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about-us',
@@ -9,7 +10,9 @@ import { Component } from '@angular/core';
 export class AboutUsComponent {
   showMore = false;
 
+  constructor(private router: Router) { } // Inject the Router
+
   toggleReadMore() {
-    this.showMore = !this.showMore;
+    this.router.navigate(['/pulse-point-details']); // Navigate to the new component
   }
 }

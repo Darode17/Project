@@ -1,0 +1,82 @@
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    background-color: #fff8f8;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(183, 28, 28, 0.1);
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #444;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #c62828;
+    box-shadow: 0 0 4px rgba(198, 40, 40, 0.2);
+}
+
+.errors .text-danger {
+    color: #d32f2f;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    margin-top: 5px;
+    color: #c62828;
+    text-decoration: none;
+}
+
+.btn-login {
+    padding: 12px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    background-color: #b71c1c;
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+
+.footer-text a {
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: bold;
+}

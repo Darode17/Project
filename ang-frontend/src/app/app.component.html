@@ -1,6 +1,29 @@
+<nav class="navbar">
+    <div class="brand">PulsePoint</div>
+    <div class="links">
+        <a routerLink="/Home">Home</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">Login</button> <!-- No routerLink -->
+            <div class="dropdown-content">
+                <a routerLink="/donor-login">Donor Login</a>
+                <a routerLink="/receiver-login">Receiver Login</a>
+            </div>
+        </div>
+
+
+        <a routerLink="/Contactus">Contact us</a>
+        <a routerLink="/Dashboard">Dashboard</a>
+    </div>
+</nav>
+
+<!-- Routed components will be injected here -->
+<router-outlet></router-outlet>
+
 <!-- <app-navbar></app-navbar> -->
 
-<nav class="navbar">
+<!-- <nav class="navbar">
+    <div class="brand">PulsePoint</div>
     <div class="links">
         <a routerLink="Home">Home</a>
         <a routerLink="Login">Login</a>
@@ -9,8 +32,8 @@
     </div>
 </nav>
 
-<!-- Routed components will be injected here -->
-<router-outlet></router-outlet>
+Routed components will be injected here -->
+<!-- <router-outlet></router-outlet>  -->
 
 <!-- These will always be visible -->
 <!-- <app-carousel></app-carousel>

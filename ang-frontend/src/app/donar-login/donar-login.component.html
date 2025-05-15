@@ -1,0 +1,62 @@
+<br><br>
+<br>
+<br><br>
+<br>
+<div class="contariner">
+    <form [formGroup]="loginForm" class="login-container">
+
+
+
+        <!-- Email -->
+        <div class="input-group">
+            <label for="userEmail" class="input-label" id="emailLable">Email</label>
+            <input id="userEmail" type="email" formControlName="email" name="email" placeholder="name@example.com"
+                class="input-field"
+                [class.border-red-500]="loginForm.get('email')?.invalid && loginForm.get('email')?.touched" />
+            <div class="errors">
+                <span class="text-danger"
+                    *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.hasError('required')">email is
+                    invalide</span>
+                <span class="text-danger"
+                    *ngIf="loginForm.get('email')?.hasError('email') && loginForm.get('email')?.invalid">use proper
+                    email formate (abc &#64; gmail.com)</span>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="input-group">
+            <label for="userPassword" id="passWordLable" class="input-label">Password</label>
+
+            <input id="userPassword" type="password" formControlName="password" name="password" class="input-field" />
+            <a routerLink="/forgot" class="forgot-password">Forgot password?</a>
+            <div class="errors">
+                <p class="text-danger"
+                    *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.hasError('required') ">
+                    password in Valid</p>
+                <p class="text-danger"
+                    *ngIf="loginForm.get('password')?.hasError('minlength') && loginForm.get('password')?.invalid ">
+                    minimun length is 6</p>
+            </div>
+        </div>
+
+        <!-- Remember Me -->
+        <!-- <div class="checkbox-group">
+    <input type="checkbox" id="rememberMe" formControlName="rememberMe" class="checkbox-input" />
+    <label for="rememberMe">Remember me</label>
+  </div> -->
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-login" [disabled]="loginForm.invalid" (click)="onSubmit()">
+            Sign in
+        </button>
+
+        <!-- OR Divider -->
+        <!-- <div class="divider">
+    <span>Or</span>
+  </div> -->
+
+        <!-- Footer -->
+        <p class="footer-text">Don't have an account? <a routerLink="/register">Sign up</a></p>
+        <h1>{{errormessage}}</h1>
+    </form>
+</div>

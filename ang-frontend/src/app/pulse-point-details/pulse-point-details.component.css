@@ -1,0 +1,84 @@
+.pulse-point-details {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.pulse-point-details h2 {
+    color: #e44c65;
+    /* A primary blood donation color */
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.pulse-point-details h3 {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+.pulse-point-details p {
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+.pulse-point-details p:last-child {
+    margin-bottom: 0;
+}
+
+.pulse-point-details button {
+    display: block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #e44c65;
+    /* Primary blood donation color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pulse-point-details button:hover {
+    background-color: #c83d52;
+    /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .pulse-point-details {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .pulse-point-details h2 {
+        font-size: 2em;
+    }
+
+    .pulse-point-details h3 {
+        font-size: 1.1em;
+    }
+
+    .pulse-point-details p {
+        font-size: 0.95em;
+    }
+
+    .pulse-point-details button {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+}

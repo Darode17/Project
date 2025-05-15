@@ -1,20 +1,18 @@
-<div class="navbar">
+<nav class="navbar">
     <div class="brand">PulsePoint</div>
-    <div class="nav-links">
-        <a href="#">Home</a>
-      
+    <div class="links">
+        <a routerLink="/Home">Home</a>
+
+        <!-- Dropdown for Login -->
         <div class="dropdown">
             <button class="dropbtn">Login</button>
             <div class="dropdown-content">
-                <a href="#">Donor Login</a>
-                <a href="#">Receiver Login</a>
-                <a href="#">Bank Login</a>
+                <a routerLink="/donor-login">Donor Login</a>
+                <a routerLink="/receiver-login">Receiver Login</a>
             </div>
         </div>
-          
-          
 
-        <a href="#">Contact us</a>
-        <a href="#">Dashboard</a>
+        <a routerLink="/Contactus">Contact us</a>
+        <a routerLink="/Dashboard">Dashboard</a>
     </div>
-</div>
+</nav>

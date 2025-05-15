@@ -1,0 +1,52 @@
+<div class="container">
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="login-container">
+        <h2>Receiver Signup</h2>
+
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" formControlName="fullName" />
+            <div class="error" *ngIf="signupForm.get('fullName')?.touched && signupForm.get('fullName')?.invalid">
+                Full Name is required
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" formControlName="email" />
+            <div class="error" *ngIf="signupForm.get('email')?.touched && signupForm.get('email')?.invalid">
+                <span *ngIf="signupForm.get('email')?.hasError('required')">Email is required</span>
+                <span *ngIf="signupForm.get('email')?.hasError('email')">Invalid email</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" formControlName="password" />
+            <div class="error" *ngIf="signupForm.get('password')?.touched && signupForm.get('password')?.invalid">
+                Must be at least 8 characters, include a number and special character
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Date of Birth</label>
+            <input type="date" formControlName="dateOfBirth" />
+            <div class="error" *ngIf="dateOfBirth?.touched && dateOfBirth?.invalid">
+                <span *ngIf="dateOfBirth?.errors?.['required']">Date of Birth is required</span>
+                <span *ngIf="dateOfBirth?.errors?.['ageInvalid']">Must be 18+</span>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Gender</label>
+            <select formControlName="gender">
+                <option value="" disabled selected>Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <button class="btn" type="submit" [disabled]="signupForm.invalid">Create Account</button>
+    </form>
+</div>
+  
