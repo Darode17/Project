@@ -1,0 +1,11 @@
+<div class="marquee-container">
+    <div class="marquee-track">
+        <div class="card" *ngFor="let item of infoCards; let i = index" [ngClass]="'card' + (i + 1)">
+
+            <img [src]="item.icon" alt="icon" class="icon" />
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.subtitle }}</p>
+        </div>
+    </div>
+</div>
+  
