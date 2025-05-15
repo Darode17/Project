@@ -1,0 +1,80 @@
+<div class="container">
+
+    <form [formGroup]="registerForm" class="login-container">
+        <div class="input-group">
+            <label for="first-name">Full Name</label>
+            <input type="text" id="first-name" formControlName="fullName" name="fullName" placeholder="John Doe">
+            <div class="errors">
+                <p class="text-danger"
+                    *ngIf="registerForm.get('fullName')?.touched && registerForm.get('fullName')?.hasError('required') ">
+                    Full Name is required</p>
+            </div>
+
+        </div>
+        <div class="input-group">
+            <label for="last-name">User Name</label>
+            <input type="text" id="last-name" formControlName="username" name="username" placeholder="john">
+            <div class="errors">
+
+                <p class="text-danger"
+                    *ngIf="registerForm.get('username')?.touched && registerForm.get('username')?.hasError('required') ">
+                    User Name is required</p>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" formControlName="email" placeholder="name@example.com">
+            <div class="errors">
+                <span class="text-danger"
+                    *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.hasError('required')">Email
+                    is required</span>
+                <span class="text-danger"
+                    *ngIf="registerForm.get('email')?.hasError('email') && registerForm.get('email')?.invalid">use
+                    proper email formate (abc &#64; gmail.com)</span>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" formControlName="password" name="password"
+                placeholder="Enter password">
+            <div class="errors">
+                <p class="text-danger"
+                    *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.hasError('required') ">
+                    password is required</p>
+                <p class="text-danger"
+                    *ngIf="registerForm.get('password')?.hasError('pattern') && registerForm.get('password')?.invalid ">
+                    Must be at least 8 characters and include a number and special character</p>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" bsDatepicker name="dateOfBirth" formControlName="dateOfBirth" />
+            <div *ngIf="dateOfBirth?.invalid && dateOfBirth?.touched" class="error">
+                <span *ngIf="dateOfBirth?.errors?.['required']">Date of Birth is required.</span>
+                <span *ngIf="dateOfBirth?.errors?.['ageInvalid']">You must be at least 18 years old.</span>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="gender">Gender</label>
+
+
+            <select id="gender" name="gender" formControlName="gender">
+                <option value="" disabled selected>Select your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+
+        <!-- <div class="input-group">
+            <input type="checkbox" id="terms">
+            <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+        </div> -->
+
+        <button id="registerButton" [disabled]="registerForm.invalid" (click)="onSubmit()" class="btn"
+            type="submit"><span>❤️</span> Create Account</button>
+    </form>
+    <p class="footer-text">you have already Account? <a routerLink="/login">Sign In</a></p>
+</div>

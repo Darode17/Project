@@ -1,0 +1,42 @@
+.navbar {
+    background: #b91c1c;
+    /* Gradient background */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: right;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+}
+
+.links a:hover {
+    color: #ffeb3b;
+}
+
+.links a:hover::after {
+    width: 100%;
+}
